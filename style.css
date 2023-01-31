@@ -1,0 +1,283 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa&family=Quicksand&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-size: 100%;
+    background: linear-gradient(68.15deg, #050505 16.62%, #004b3b 85.61%);
+}
+
+#mais{display: none}
+
+.carrosel {
+    width: 310px;
+    height: 432px;
+    outline: 3px solid #ffffff;
+    overflow: hidden;
+}
+
+.carrosel ul {
+    display: flex;
+    list-style: none;
+    width: 1200px;
+    height: 432px;
+}
+
+.carrosel li{
+    position: relative;
+    animation: slide 20s infinite ease-out;
+}
+
+@keyframes slide {
+    0%{Left: 0px}
+    20%{Left:0px}
+    30%{Left: -330px}
+    50%{Left: -330px}
+    60%{Left: -630px}
+    80%{Left: -630px}
+    85%{Left: -930px}
+    99%{Left: -930px}
+    100%{Left: 0px}
+}
+
+.cabecalho {
+    display: flex;
+    padding: 24px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    box-shadow: 6px 7px 6px rgba(0, 0, 0, 25);
+}
+
+.cabecalhocor {
+    background: linear-gradient(68.15deg, #004b3b 16.62%, #050505 85.61%)
+}
+
+.cabecalho-menu {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.cabecalho-menu-lista {
+    padding: 17px;
+    text-align: center;
+    background-color: #00ab86;
+    width: 150px;
+    height: 50px;
+    border: none;
+    box-shadow: 6px 7px 6px rgba(0, 0, 0, 25);
+    border-radius: 70px;
+    font-family: 'Comfortaa', cursive;
+    font-weight: 700;
+    font-size: 13px;
+    color: #050505;
+}
+
+.cabecalho-menu-letra2 {
+    position: absolute;
+    right: 710px;
+    font-family: 'Comfortaa', cursive;
+    font-weight: 700;
+    font-size: 14px;
+    color: #050505;
+}
+
+.cabecalho-menu-letra {
+    position: absolute;
+    right: 848px;
+    font-family: 'Comfortaa', cursive;
+    font-weight: 700;
+    font-size: 14px;
+    color: #050505;
+}
+
+
+.cabecalho-menu-lista:hover{
+    background-color: #004b3b;
+}
+
+.conteudo {
+    margin-bottom: 48px;
+}
+
+.conteudo-principal {
+    display: flex;
+    padding: 80px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.conteudo-principal-escrito {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.conteudo-principal-escrito-titulo {
+    font-family: 'Comfortaa', cursive;
+    font-weight: 400;
+    font-size: 64px;
+    color: #ffffff;
+}
+
+.conteudo-principal-escrito-subtitulo {
+    font-family: 'Comfortaa', cursive;
+    font-weight: 400;
+    font-size: 24px;
+    color: #00ab86;
+}
+
+
+#botao {
+    background-color: #00ab86;
+    width: 180px;
+    height: 67px;
+    border: none;
+    box-shadow: 6px 7px 6px rgba(0, 0, 0, 25);
+    border-radius: 70px;
+    font-family: 'Comfortaa', cursive;
+    font-weight: 400;
+    font-size: 20px;
+    color: #050505;
+}
+
+#botao:hover {
+    background-color: #004b3b;
+}
+
+.conteudo-principal-imagem {
+    height: 430px;
+}
+
+.conteudo-secundario {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+    margin-top: 48px;
+}
+
+.conteudo-secundario-titulo {
+    border-top: 0.1px solid #ffffff;
+    padding-top: 35px;
+    margin-bottom: 20px;
+    font-family: 'Comfortaa', cursive;
+    font-weight: 400;
+    font-size: 24px;
+    color: #ffffff;
+}
+.conteudo-secundario-paragrafo {
+    font-family: 'Comfortaa', cursive;
+    font-weight: 100;
+    font-size: 18px;
+    color: #00ab86;
+}
+
+.conteudo-terciario {
+    display: flex;
+    padding: 150px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.conteudo-terciario-escrito-titulo{
+    font-family: 'Comfortaa', cursive;
+    font-weight: 400;
+    font-size: 64px;
+    color: #ffffff;
+}
+
+.conteudo-terciario-paragrafo{
+    position: relative;
+    top: -20px;
+    font-family: 'Comfortaa', cursive;
+    font-weight: 400;
+    font-size: 12px;
+    color: #ffffff;
+    padding: 0.6px;
+}
+
+.conteudo-terciario-paragrafo2 {
+    align-items: center;
+        position: relative;
+        top: 0px;
+        right: -10px;
+        font-family: 'Comfortaa', cursive;
+        font-weight: 400;
+        font-size: 12px;
+        color: #ffffff;
+        padding: 0.6px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+}
+
+.card {
+    width: 300px;
+    height: 500px;
+    border-radius: 15px;
+    margin-top: 50px;
+    box-shadow: 4px 5px 5px rgba(0, 0, 0, 25);
+    background: linear-gradient(68.15deg, #004b3b 16.62%, #050505 85.61%)
+}
+
+.imagemdocontato {
+    display: flex;
+    justify-content: center;
+}
+
+.contatoimg {
+    width: 150px;
+    height: 150px;
+    border-radius: 20%;
+    margin-top: 20px;
+}
+
+.textoh3contato {
+    text-align: center;
+    font-family: 'Comfortaa', cursive;
+    margin-top: 60px;
+    font-weight: 100;
+    font-size: 15px;
+    color: #00ab86;
+}
+
+.rodape {
+    padding: 32px;
+}
+
+.rodape-imagem {
+    height: 48x;
+    padding: 10px;
+    display: block;
+    margin: 0 auto;   
+}
+
+.wpp {
+    border-radius: 40%;
+    position: relative;
+    top: 120px;
+    right: px;
+}
+
+.tt {
+    border-radius: 40%;
+    position: relative;
+    top: 120px;
+    right: -10px;
+}
